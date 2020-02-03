@@ -1,0 +1,117 @@
+
+$main-text-size:20px;
+$primary-color:#b5d47e;
+$second-color:#1a5bac;
+$third-color:#bf0000;
+$fourth-color:#da661a;
+$main-bg: rgb(248, 244, 244);
+
+$brdr-radius:30px;
+$brdr-width:30px;
+
+
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #e74c3c !important;
+    }
+
+nav{
+    direction: rtl;
+    height: 70px;
+    background-color: $main-bg;
+}
+
+.active{
+    background-color:$primary-color;
+    border: none;
+}
+
+.nav-link{
+    font-size: $main-text-size;
+    
+}
+span{
+    color:$second-color ;
+    font-size: $main-text-size;
+    font-weight: 400;
+}
+
+
+    .searchbar{
+    margin: auto;
+    height: 60px;
+    background-color: $primary-color;
+    border-width: $brdr-width;
+    border-radius: $brdr-radius;
+    padding: 10px;
+    position: relative;
+     right: 150px;
+    }
+
+    .search_input{
+    color: black;
+
+    border-radius: $brdr-radius;
+    border-width: 0px;
+    border-left: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 350px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color:$primary-color;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 50px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+
+    .second-nav{
+        text-align: left;
+        height:100%;
+        position: fixed;
+        right: 0;
+        top: 70px;
+        width: 15%;
+       border-left: 1px inset $main-bg;
+    
+    }
+    
+    .second-nav ul{
+        padding: 0;
+        margin: 0;
+       
+    }
+.second-nav li{
+    width: 100%;
+    text-align: center;
+}
+.second-nav  .main{
+    margin-top: -50px;
+}
+
+.second-nav .navbar-nav li.active > a {
+	background-color: $primary-color;
+	color: #fff;
+}
