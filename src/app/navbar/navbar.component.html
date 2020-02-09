@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-sm   navbar-light  fixed-top ">
    
     <a class="navbar-brand " href="#"> 
-  <img src="assets/images/logo.png" alt="Logo" style="width:120px;" class="m-4 ">
+  <img src="assets/images/logo.png" alt="Logo"   class="m-4 ">
     </a>
     <span class="mt-4">   صحتك تهمنا </span>
     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -22,17 +22,19 @@
         <ul class="navbar-nav  mr-auto ml-4 mt-lg-0">
            
             <li class="nav-item">
-                <a class="nav-link ml-3 border  rounded-pill border-info" href="#">دخول</a>
+                <a class="nav-link ml-3 border  rounded-pill border-info" routerLink='login'>دخول</a>
+                   
             </li>
-            <li class="nav-item border rounded-pill border-info">
-                <a class="nav-link " href="#">التسجيل</a>
+
+            <li class="nav-item">
+            <a class="nav-link ml-3 border  rounded-pill border-info" routerLink='sign'>التسجيل</a>
             </li>
         </ul>
         
     </div>
 
 </nav>
-
+<!---\
 <nav class="navbar navbar-expand-sm  second-nav navbar-light ">
    
 
@@ -62,10 +64,54 @@
                   <a class="dropdown-item" href="#">Action 1</a>
                     <a class="dropdown-item" href="#">Action 2</a>
                 </div>
-            </li> -->
+            </li> 
         </ul>
       
         
     </div>
 
-</nav>
+</nav>-->
+<section class="side-nav">
+    <div class="header-nav">
+      <div class="logo">
+        <i class="fas fa-hospital-symbol fa-3x"></i>
+      </div>
+      <div class="toggle-menu" (click)="press()">
+        <i class="fa fa-align-justify"></i>
+      </div>
+      <div class="social-icons">
+        <div> <i class="fas fa-globe"></i> </div>
+        <div> <i class="fas fa-share-alt"></i> </div>
+      </div>
+    </div>
+  
+    <div class="nav-menu">
+      <div class="nav-item">
+        <h4 class="p-3"> اطمن </h4>
+      <ul class=" h-100 ">
+            <li class="nav-item main  list-group-item">
+                <a class="nav-link " routerLink='home'>  الصفحة الرئيسية<span class="sr-only">(current)</span></a>
+            </li>
+         
+            <li class="nav-item mt-4 w-100 list-group-item">
+                <a class="nav-link  " routerLink='health' >صحتك</a>
+            </li>
+            <li class="nav-item mt-4 w-100 list-group-item">
+                <a class="nav-link " routerLink='medicines'  >الأدوية</a>
+            </li>
+            <li class="nav-item mt-4 w-100 list-group-item">
+                <a class="nav-link " routerLink='diseases'  >الأمراض الشائعة</a>
+            </li>
+            <li class="nav-item mt-4 w-100 list-group-item">
+                <a class="nav-link "routerLink='search'>ابحث عن طبيب</a>
+            </li>
+        </ul>
+      </div>
+     <!--- <div class="social-item">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fas fa-globe"></i></a>
+        <div class="pt-3"><span>Copyright Â© 2019 All Rights Reserved.</span></div>
+      </div>-->
+    </div>
+  </section>

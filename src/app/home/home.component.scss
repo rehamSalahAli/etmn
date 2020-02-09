@@ -1,0 +1,29 @@
+
+$main-text-size:20px;
+$primary-color:#b5d47e;
+$second-color:#1a5bac;
+$third-color:#bf0000;
+$fourth-color:#eb8744;
+$main-bg: rgb(248, 244, 244);
+$second-bgcolor:rgba(181, 212, 126,0.5);
+
+.home{
+    margin-top: 80px;
+}
+.pragraph{
+    background-color: $second-bgcolor;
+}
+.special-p{
+    color:$second-color;
+
+        font-size: 24px;
+        font-weight: 400;
+  
+}
+.mapp{
+    border-width: 3px;
+}
+.mapp:hover {
+    border: $fourth-color;
+    border-width: 5px;
+}

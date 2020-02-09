@@ -3,25 +3,44 @@ $main-text-size:20px;
 $primary-color:#b5d47e;
 $second-color:#1a5bac;
 $third-color:#bf0000;
-$fourth-color:#da661a;
+$fourth-color:rgb(218, 102, 26);
+$header-color:rgba(218, 102, 26 , 0.6);
 $main-bg: rgb(248, 244, 244);
 
 $brdr-radius:30px;
 $brdr-width:30px;
+$bgColor:#192030;
+$secondFontColor:#949cb0;
+$thirdFontColor:#fec400;
+$thirdColor:#dc3545;
 
-
+$bgColor:#192030;
+$secondColor:#252a38;
+$lightBgColor:#24baef;
+$bgTransparent:rgba(36,186,239,.6) ;
+$fontColor:#fff;
+$borderColor:#a8a8a83d;
+$borderHeight:1px;
+$secondFontColor:#949cb0;
+$thirdFontColor:#fec400;
+$thirdColor:#dc3545;
 body,html{
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    background: #e74c3c !important;
+    
     }
 
 nav{
     direction: rtl;
     height: 70px;
     background-color: $main-bg;
+    img{
+        width: 120px;
+        height: 70px;
+       padding-right: 10px;
+    }
 }
 
 .active{
@@ -66,7 +85,7 @@ span{
     .searchbar:hover > .search_input{
     padding: 0 10px;
     width: 350px;
-    caret-color:red;
+    caret-color:rgb(102, 98, 98);
     transition: width 0.4s linear;
     }
 
@@ -86,7 +105,7 @@ span{
     color:white;
     text-decoration:none;
     }
-
+/*
     .second-nav{
         text-align: left;
         height:100%;
@@ -114,4 +133,189 @@ span{
 .second-nav .navbar-nav li.active > a {
 	background-color: $primary-color;
 	color: #fff;
+}
+
+
+.second-nav {
+    text-align: left;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 70px;
+    width: 15%;
+    border-left: 1px inset #f8f4f4;
+    z-index: 9999999px;
+  }
+  
+  .second-nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .second-nav li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .second-nav .main {
+    margin-top: -50px;
+  }
+  
+  .second-nav .navbar-nav li.active > a {
+    background-color: #b5d47e;
+    color: #fff;
+  } */
+  /*# sourceMappingURL=navbar.component.css.map */
+  
+  .side-nav{
+    
+    .header-nav
+    {
+        position: fixed;
+        top: 5px;
+        right: 0;
+        width: 60px;
+        height: 100vh;
+        z-index: 55555555;
+        background-color: $secondColor;
+        text-align: center;
+        transition: all 0.6s ease;
+
+    }
+    .header-nav .logo
+    {
+        padding: 25px 0;
+        color: $fourth-color;
+    }
+    .header-nav .logo:hover{
+        color: $fontColor;
+
+    }
+    
+    .header-nav i{
+        cursor: pointer;
+    }
+    .header-nav .toggle-menu
+    {
+        position: absolute;
+        top: 50%;
+       right:20%;
+        transform: translate(-50%,-50%);
+    }
+    .toggle-menu i
+    {
+        font-size: 25px;
+        color: $fourth-color;
+    }
+    .toggle-menu i:hover{
+        color: $fontColor;
+    }
+    .header-nav .social-icons
+    {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 11;
+    }
+    .social-icons div
+    {
+        padding-top: 10px;
+    }
+    .social-icons i:hover{
+    color: $second-color;
+    }
+    
+    
+    .nav-menu
+    {
+        position: fixed;
+        top: 5px;
+        right: 0px;
+        width: 250px;
+        height: 100vh;
+        z-index: 5555;
+        background-color: $main-bg;
+        transform: translateX(100%);
+        transition: all 0.6s ease;
+        
+            h4{
+                position: relative;
+                text-align: center;
+                background-color: $secondColor;
+                color: $fontColor;
+    
+
+            }
+        
+    }
+    .openMenu {
+        transform: scale(1) !important;
+    }
+    
+    .nav-item ul
+    {
+        padding-left: 30px;
+        height: 300px;
+        overflow: hidden;
+    }
+    li
+    {
+        list-style: none;
+        transition: all 1.2s ease;
+    }
+    
+    .nav-item ul a
+    {
+        color: $second-color;
+        font-weight: 600;
+        font-size: 18px;
+        text-decoration: none;
+        transition: color .3s;
+        text-align: center;
+    }
+    .nav-item ul a:hover
+    {
+        color: $fourth-color;
+    }
+    li a:hover
+  {
+      color: #dc3545;
+  }
+  .social-item
+  {
+      position: absolute;
+      bottom: 50px;
+      left: 20px;
+  }
+  .social-item a
+  {
+      color: #f9f6f6;
+      padding-left: 15px;
+      font-size: 14px;
+      text-decoration: none;
+  }
+  .social-item span
+  {
+      color: #999;
+  }
+  a:hover{
+      color:#dc3545 ;
+  }}
+
+  
+    span{
+
+animation-name: changeColor;
+animation-duration: 5s;
+animation-direction: alternate-reverse;
+animation-iteration-count: infinite;
+}
+
+@keyframes changeColor{
+0%{color: white};
+10%{color: $thirdFontColor};
+40%{color: $lightBgColor};
+70%{color: $thirdColor};
+100%{color: $bgColor};
 }

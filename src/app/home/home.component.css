@@ -1,0 +1,23 @@
+.home {
+  margin-top: 80px;
+}
+
+.pragraph {
+  background-color: #f8f4f4;
+}
+
+.special-p {
+  color: #1a5bac;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.mapp {
+  border-width: 3px;
+}
+
+.mapp:hover {
+  border: #eb8744;
+  border-width: 5px;
+}
+/*# sourceMappingURL=home.component.css.map */

@@ -7,6 +7,11 @@ import { HealthComponent } from './health/health.component';
 import { MedicinesComponent } from './medicines/medicines.component';
 import { SearchComponent } from './search/search.component';
 import { DiseasesComponent } from './diseases/diseases.component';
+import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { WebsiteMapComponent } from './website-map/website-map.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 const routes: Routes = [
@@ -17,8 +22,15 @@ const routes: Routes = [
 {path:'diseases' , component:DiseasesComponent} , 
 
 {path:'search' , component:SearchComponent} , 
+{path:'login' , component:LoginComponent} , 
 
+{path:'sign' , component:SignUpComponent} , 
 
+{path:'contact' , component:ContactUsComponent} ,
+
+{path:'map' , component:WebsiteMapComponent} , 
+
+{path:'about' , component:AboutUsComponent} , 
 {path:'**' , component:NotFoundComponent}
 
 ];
