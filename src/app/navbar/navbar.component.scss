@@ -1,56 +1,28 @@
-
+@import '../colors';
+@import '../animation';
 $main-text-size:20px;
-$primary-color:#b5d47e;
-$second-color:#1a5bac;
-$third-color:#bf0000;
-$fourth-color:rgb(218, 102, 26);
-$header-color:rgba(218, 102, 26 , 0.6);
-$main-bg: rgb(248, 244, 244);
-
-$brdr-radius:30px;
-$brdr-width:30px;
-$bgColor:#192030;
-$secondFontColor:#949cb0;
-$thirdFontColor:#fec400;
-$thirdColor:#dc3545;
-
-$bgColor:#192030;
-$secondColor:#252a38;
-$lightBgColor:#24baef;
-$bgTransparent:rgba(36,186,239,.6) ;
-$fontColor:#fff;
-$borderColor:#a8a8a83d;
-$borderHeight:1px;
-$secondFontColor:#949cb0;
-$thirdFontColor:#fec400;
-$thirdColor:#dc3545;
-body,html{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    
-    }
-
+$height:70px;
 nav{
     direction: rtl;
-    height: 70px;
+    height:$height;
     background-color: $main-bg;
     img{
         width: 120px;
-        height: 70px;
+        height: $height;
        padding-right: 10px;
     }
-}
+
 
 .active{
     background-color:$primary-color;
     border: none;
 }
-
+.nav-item a:hover{
+    color: $third-color !important;
+}
 .nav-link{
     font-size: $main-text-size;
-    
+ 
 }
 span{
     color:$second-color ;
@@ -81,7 +53,17 @@ span{
     line-height: 40px;
     transition: width 0.4s linear;
     }
-
+    .search_icon{
+        height: 40px;
+        width: 50px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color:white;
+        text-decoration:none;
+        }   
     .searchbar:hover > .search_input{
     padding: 0 10px;
     width: 350px;
@@ -91,82 +73,11 @@ span{
 
     .searchbar:hover > .search_icon{
     background: white;
-    color:$primary-color;
+    color:$third-color;
     }
 
-    .search_icon{
-    height: 40px;
-    width: 50px;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color:white;
-    text-decoration:none;
-    }
-/*
-    .second-nav{
-        text-align: left;
-        height:100%;
-        position: fixed;
-        right: 0;
-        top: 70px;
-        width: 15%;
-       border-left: 1px inset $main-bg;
-    
-    }
-    
-    .second-nav ul{
-        padding: 0;
-        margin: 0;
-       
-    }
-.second-nav li{
-    width: 100%;
-    text-align: center;
-}
-.second-nav  .main{
-    margin-top: -50px;
 }
 
-.second-nav .navbar-nav li.active > a {
-	background-color: $primary-color;
-	color: #fff;
-}
-
-
-.second-nav {
-    text-align: left;
-    height: 100%;
-    position: fixed;
-    right: 0;
-    top: 70px;
-    width: 15%;
-    border-left: 1px inset #f8f4f4;
-    z-index: 9999999px;
-  }
-  
-  .second-nav ul {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .second-nav li {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .second-nav .main {
-    margin-top: -50px;
-  }
-  
-  .second-nav .navbar-nav li.active > a {
-    background-color: #b5d47e;
-    color: #fff;
-  } */
-  /*# sourceMappingURL=navbar.component.css.map */
-  
   .side-nav{
     
     .header-nav
@@ -304,18 +215,5 @@ span{
   }}
 
   
-    span{
+ 
 
-animation-name: changeColor;
-animation-duration: 5s;
-animation-direction: alternate-reverse;
-animation-iteration-count: infinite;
-}
-
-@keyframes changeColor{
-0%{color: white};
-10%{color: $thirdFontColor};
-40%{color: $lightBgColor};
-70%{color: $thirdColor};
-100%{color: $bgColor};
-}

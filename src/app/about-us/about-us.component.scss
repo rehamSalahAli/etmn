@@ -1,0 +1,62 @@
+@import '../colors';
+@import '../animation';
+.carousel{
+    height: 100%;
+
+}
+
+.carousel ol li{
+    background-color: blue;
+
+}
+.main-carousel{
+    position: relative;
+}
+.carousel .caption{
+background-color: rgba(156, 154, 154, 0.5);
+width: 60%;
+text-align: center;
+left: 20%;
+right:30%;
+position: absolute;
+bottom:50%;
+overflow: hidden;
+p{
+    font-size: 18px;
+    line-height: 50px;
+ color: $bgColor;
+}
+
+}
+ul{
+    direction: rtl;
+
+ li{
+     text-align: right;
+ }
+}
+.carousel .cap-2{
+    bottom:40%;
+    left: 5%;
+    width: 50%;
+    padding: 5px;
+}
+.carousel .cap-3{
+    bottom:33%;
+    left: 20%;
+    width:60%;
+    padding: 5px;
+}
+
+  /* Simple CSS3 Fade-in Animation */
+  .underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #56baed;
+    content: "";
+    transition: width 0.2s;
+  }
+  

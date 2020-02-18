@@ -1,21 +1,10 @@
-  
-$main-text-size:20px;
-$primary-color:#b5d47e;
-
-$third-color:rgb(191, 0, 0);
-$fourth-color:#da661a;
-$main-bg: rgb(248, 244, 244);
-$bgColor:rgba(25, 32, 48, 0.9);
-$second-color:#1a5bac;
-$brdr-radius:30px;
-$brdr-width:30px;
-
+@import '../colors';
 
 .section-foot{
     height: 100px;
 	width: 100%;
 
-color: white;
+color:white;
 }
 .cont{
 	margin: auto;
