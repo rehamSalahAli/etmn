@@ -224,4 +224,8 @@ border-radius: 30px 20px 30px 20px;
   #icon {
     width:30%;
   }
-  
+  @media(max-width:380px){
+    .wrapperr{
+      margin-top: 35px;
+    }
+  }

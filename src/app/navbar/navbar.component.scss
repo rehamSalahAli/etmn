@@ -1,19 +1,44 @@
 @import '../colors';
 @import '../animation';
+@import url('https://fonts.googleapis.com/css?family=Changa&display=swap');
 $main-text-size:20px;
 $height:70px;
+
+
 nav{
     direction: rtl;
-    height:$height;
-    background-color: $main-bg;
-position: relative;
-    .logo-img{
-        height: 70px;
-     width: 120px;
-     margin: 20px;
-   
+    height: $height;
+
+img{
+    height: 65px !important;
+}
+.logo{
+    position: fixed;
+    top: 0;
+
+right: 20px;
+}
+.container{
+    justify-content: space-around !important;
+ 
+}
+    .navbar-brand{
+        margin: 0;
+        padding: 0;
+        font-size: 40px;
+       font-style: 'Changa';
+       text-align: center;
+    }
+    .h1{
+        color:$bgColor !important;
+        text-align: center !important;
     }
 
+ul{
+    display: flex;
+    justify-content: start !important;
+    
+}
 
 .active{
     background-color:$primary-color;
@@ -24,7 +49,7 @@ position: relative;
 }
 .nav-link{
     font-size: $main-text-size;
- 
+ padding: 12px;
 }
 span{
     color:$second-color ;
@@ -42,6 +67,10 @@ span{
     border-radius: $brdr-radius;
     padding: 10px;
    text-align: center;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
     }
 
     .search_input{
@@ -54,11 +83,12 @@ span{
     caret-color:transparent;
     line-height: 40px;
     transition: width 0.4s linear;
+    text-align: center;
     }
     .search_icon{
         height: 40px;
         width: 50px;
-        float: left;
+     
         display: flex;
         justify-content: center;
         align-items: center;
@@ -66,6 +96,7 @@ span{
         color:white;
         text-decoration:none;
         }   
+       
     .searchbar:hover > .search_input{
     padding: 0 10px;
     width: 350px;
@@ -215,13 +246,43 @@ span{
   a:hover{
       color:#dc3545 ;
   }}
-
-  
- @media(max-width:670px){
-.container{
-display:none;
+ 
+  @media(max-width:840px){
+.navbar-brand{
+    margin-right: 10px;
+}  
 }
- }
+  @media(max-width:767px){
+      .collapse
+      {
+          background-color:$bgColor !important;
+          z-index: 5555555555;
+      
+          margin-top: 2px;
+          color: white !important;
+          box-shadow: 7px 7px 15px grey;
+          padding-bottom: 15px;;
+          .navbar-nav .nav-item{
+            margin-top: 25px;
+                  }
+            .nav-link{
+                color: white;
+            }
+                  .nav-item a:hover{
+                    color: $thirdFontColor !important;
+                }
+                   .navbar-toggler {
+                   
+                    background-color: transparent;
+                    border-color: rgba(0, 0, 0, 0.4) !important;
+                }
+                .navbar-toggler-icon{
+                    color: red !important;
+                }
+      }
+
+  }
+
  @media(max-width:582px){
     .logo-img{
    margin: 0;
@@ -232,10 +293,10 @@ display:none;
     .sh3ar{
     display:none;
     }
-    .logo-img{
+   /* .logo-img{
         margin: 0;
       position: absolute;
  top: -20px;
  right: 5px;
-    }
+    }*/
      }

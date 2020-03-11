@@ -1,6 +1,11 @@
 @import '../colors';
 @import '../animation';
 @import '../formTypography';
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 section{
     
   background-image: url("../../assets/images/gettyimages-530727683.jpg");
@@ -10,19 +15,24 @@ section{
 
 }
 .home{
+  background-color:  rgba(20, 25, 37, 0.8) !important;
+
 }
-.pragraph{
-background-color:  rgba(20, 25, 37, 0.8);
+
+
+.container {
+
 color: #fff;
 
 }
+
 h6{
 color: $fourth-color;
 }
 .special-p{
 color:$fourth-color;
 
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
 
 }
@@ -34,6 +44,51 @@ border: $fourth-color;
 border-width: 5px;
 }
 
+.pic{
+margin-bottom: 30px;
+}
 
 
 
+
+
+
+.organs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+
+}
+
+@media(max-width:770px){
+  body{
+    font-size: 20px;
+  }
+  .pic{
+    width: 90%;
+  }
+
+}
+
+@media(max-width:630px){
+  body{
+    font-size: 12px;
+  }
+  .pic{
+    width: 80%;
+  }
+  .container{
+    justify-content: start;
+  }
+
+}
+@media(max-width:500px){
+  body{
+    font-size: 12px;
+  }
+  .pic{
+    width: 70%;
+  }
+  
+}
